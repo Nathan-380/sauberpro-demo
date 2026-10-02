@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 html {
     scroll-behavior: smooth;
@@ -101,6 +107,16 @@ nav a:hover {
     margin-top: 35px;
     color: #eaecf0;
     font-size: 15px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+
+    max-width: 100%;
+}
+
+.hero-trust span {
+    white-space: normal;
 }
 
 .hero-content {
@@ -273,13 +289,76 @@ footer {
         font-size: 38px;
     }
 
+   @media (max-width: 600px) {
+
+    .hero {
+        min-height: auto;
+        padding: 70px 20px;
+        background-position: center;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+        line-height: 1.1;
+        word-break: normal;
+    }
+
     .hero-text {
-        font-size: 18px;
+        font-size: 17px;
+        line-height: 1.5;
     }
 
     .hero-buttons {
         flex-direction: column;
+        width: 100%;
     }
+
+    .hero-buttons a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-trust {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .trust-bar {
+        grid-template-columns: 1fr;
+        padding: 25px 20px;
+    }
+
+    .trust-item {
+        width: 100%;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .benefit-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: 22px;
+    }
+
+    section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
 
     .service-grid {
         grid-template-columns: 1fr;
