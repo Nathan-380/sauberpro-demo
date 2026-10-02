@@ -541,3 +541,69 @@ footer {
     color: #667085;
     font-size: 14px;
 }
+
+/* =====================================
+   MOBILE FIX
+   Ganz unten in style.css einfügen
+===================================== */
+
+@media screen and (max-width: 600px) {
+
+    /* TRUST BAR */
+
+    .trust-bar {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 15px 20px !important;
+        overflow: hidden;
+    }
+
+    .trust-item {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 22px 10px !important;
+        border-right: none !important;
+        border-bottom: 1px solid #eaecf0;
+        text-align: center;
+    }
+
+    .trust-item:last-child {
+        border-bottom: none;
+    }
+
+
+    /* WARUM SAUBERPRO */
+
+    .benefit-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+        gap: 16px;
+    }
+
+    .benefit-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 25px !important;
+    }
+
+    .benefit-card p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+
+    /* ALLGEMEINE ABSICHERUNG */
+
+    section {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
